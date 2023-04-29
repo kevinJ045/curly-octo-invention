@@ -1,6 +1,8 @@
 import sqlite3
 import json
 import uuid
+import requests
+from validate_email import validate_email
 
 # ###################
 # ###### DB section
@@ -171,8 +173,10 @@ def email(email):
 with open('sites.json', 'r') as sitesFile:
     sites = json.load(sitesFile)
 
+with open('email_sites.json', 'r') as sitesFile:
+    emailSites = json.load(sitesFile)
+    
 siteMaps = []
-
 
 for site in sites:
     for key in site:
@@ -181,8 +185,21 @@ for site in sites:
     siteMaps.append(site)
 
 def searchUsername(username):
-    # do loop
-    return ""
+    for site in siteMaps:
+        sitename = site['name']
+        print("Searching "+username+" in "+sitename)
+        u = site['url'].replace('<%un%>', username)
+        response = requests.get(u)
+        print(response.status_code)
 
+# searchUsername('bushyice')
 
+def searchEmail(email):
+    mailSites = []
+    for site in emailSites:
+        emailString = str(email) + '@' + str(site)
+        if validate_email(emailString):
+            mailSites.append(site)
+    return mailSites
 
+print(searchEmail('kevinjhonson213'))
