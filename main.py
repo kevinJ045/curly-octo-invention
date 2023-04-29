@@ -111,7 +111,7 @@ class Paper(Record):
 class OtherRecord(Record):
     def __init__(self):
         super().__init__()
-        self.parent = "people"
+        self.parent = "data"
         self.content = ""
         self.indexes = []
 
@@ -147,3 +147,10 @@ def phone(phone):
 
 def email(email):
     return Account('none', email, 'email').toJsonObject()
+
+
+
+def searchUsername(username):
+
+
+
