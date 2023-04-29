@@ -168,34 +168,21 @@ def email(email):
 # ###### Search Section
 # ###################
 
-siteMaps = [
-    "Twitter;twitter;twitter.com/<%un%>",
-    "Facebook;facebook;facebook.com/<%un%>",
-    "Instagram;instagram;instagram.com/<%un%>",
-    "LinkedIn;linkedin;linkedin.com/in/<%un%>",
-    "GitHub;github;github.com/<%un%>",
-    "Reddit;reddit;reddit.com/user/<%un%>",
-    "YouTube;youtube;youtube.com/channel/<%un%>",
-    "YouTubeUser;youtubeuser;youtube.com/user/<%un%>",
-    "Twitch;twitch;twitch.tv/<%un%>",
-    "TikTok;tiktok;tiktok.com/@<%un%>",
-    "Pinterest;pinterest;pinterest.com/<%un%>",
-    "SoundCloud;soundcloud;soundcloud.com/<%un%>",
-    "Vimeo;vimeo;vimeo.com/<%un%>",
-    "Medium;medium;medium.com/@<%un%>",
-    "Discord;discord;discord.com/<%un%>#<%d%>",
-    "Snapchat;snapchat;snapchat.com/add/<%un%>",
-    "WhatsApp;whatsapp;wa.me/<%un%>",
-    "Skype;skype;skype.com/<%un%>",
-    "Slack;slack;yourworkspace.slack.com/team/<%un%>",
-    "Zoom;zoom;zoom.us/j/<%un%>",
-    "Microsoft Teams;microsoft teams;teams.microsoft.com/l/persona/<%un%>",
-    "Google Meet;google meet;meet.google.com/<%un%>",
-    "Yahoo! Mail;yahoo! mail;mail.yahoo.com/d/<%un%>",
-    "AOL Mail;aol mail;mail.aol.com/<%un%>"
-]
+with open('sites.json', 'r') as sitesFile:
+    sites = json.load(sitesFile)
+
+siteMaps = []
+
+
+for site in sites:
+    for key in site:
+        if site[key] == '@template':
+            site[key] = site['template']
+    siteMaps.append(site)
 
 def searchUsername(username):
     # do loop
+    return ""
+
 
 

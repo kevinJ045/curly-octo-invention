@@ -26,5 +26,11 @@ AOL Mail: mail.aol.com/username`;
 m.split('\n').forEach(line => {
 	var name = line.split(':')[0];
 	var template = line.split(':')[1].trim();
-	console.log('"'+name+';'+name.toLowerCase()+';'+template.replace('username', '<%un%>').replace('discriminator', '<%d%>')+'",')
+	var obj = {
+		"name": name,
+		"template": 'https://'+template.replace('username', '<%un%>').replace('discriminator', '<%d%>'),
+		"url": "@template"
+	};
+	console.log(JSON.stringify(obj, null, 4)+',')
+	// console.log('"'+name+';'+name.toLowerCase()+';'+template.replace('username', '<%un%>').replace('discriminator', '<%d%>')+'",')
 })

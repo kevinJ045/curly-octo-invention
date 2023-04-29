@@ -1,0 +1,122 @@
+[
+	{
+	    "name": "Twitter",
+	    "template": "https://twitter.com/<%un%>",
+	    "url": "@template"
+	},
+	{
+	    "name": "Facebook",
+	    "template": "https://facebook.com/<%un%>",
+	    "url": "@template"
+	},
+	{
+	    "name": "Instagram",
+	    "template": "https://instagram.com/<%un%>",
+	    "url": "@template"
+	},
+	{
+	    "name": "LinkedIn",
+	    "template": "https://linkedin.com/in/<%un%>",
+	    "url": "@template"
+	},
+	{
+	    "name": "GitHub",
+	    "template": "https://github.com/<%un%>",
+	    "url": "https://api.github.com/users/<%un%>"
+	},
+	{
+	    "name": "Reddit",
+	    "template": "https://reddit.com/user/<%un%>",
+	    "url": "@template"
+	},
+	{
+	    "name": "YouTube",
+	    "template": "https://youtube.com/channel/<%un%>",
+	    "url": "@template"
+	},
+	{
+	    "name": "YouTubeUser",
+	    "template": "https://youtube.com/user/<%un%>",
+	    "url": "@template"
+	},
+	{
+	    "name": "Twitch",
+	    "template": "https://twitch.tv/<%un%>",
+	    "url": "@template"
+	},
+	{
+	    "name": "TikTok",
+	    "template": "https://tiktok.com/@<%un%>",
+	    "url": "@template"
+	},
+	{
+	    "name": "Pinterest",
+	    "template": "https://pinterest.com/<%un%>",
+	    "url": "@template"
+	},
+	{
+	    "name": "SoundCloud",
+	    "template": "https://soundcloud.com/<%un%>",
+	    "url": "@template"
+	},
+	{
+	    "name": "Vimeo",
+	    "template": "https://vimeo.com/<%un%>",
+	    "url": "@template"
+	},
+	{
+	    "name": "Medium",
+	    "template": "https://medium.com/@<%un%>",
+	    "url": "@template"
+	},
+	{
+	    "name": "Discord",
+	    "template": "https://discord.com/<%un%>#<%d%>",
+	    "url": "@template"
+	},
+	{
+	    "name": "Snapchat",
+	    "template": "https://snapchat.com/add/<%un%>",
+	    "url": "@template"
+	},
+	{
+	    "name": "WhatsApp",
+	    "template": "https://wa.me/<%un%>",
+	    "url": "@template"
+	},
+	{
+	    "name": "Skype",
+	    "template": "https://skype.com/<%un%>",
+	    "url": "@template"
+	},
+	{
+	    "name": "Slack",
+	    "template": "https://yourworkspace.slack.com/team/<%un%>",
+	    "url": "@template"
+	},
+	{
+	    "name": "Zoom",
+	    "template": "https://zoom.us/j/<%un%>",
+	    "url": "@template"
+	},
+	{
+	    "name": "Microsoft Teams",
+	    "template": "https://teams.microsoft.com/l/persona/<%un%>",
+	    "url": "@template"
+	},
+	{
+	    "name": "Google Meet",
+	    "template": "https://meet.google.com/<%un%>",
+	    "url": "@template"
+	},
+	{
+	    "name": "Yahoo! Mail",
+	    "template": "https://mail.yahoo.com/d/<%un%>",
+	    "url": "@template"
+	},
+	{
+	    "name": "AOL Mail",
+	    "template": "https://mail.aol.com/<%un%>",
+	    "url": "@template"
+	}
+]
