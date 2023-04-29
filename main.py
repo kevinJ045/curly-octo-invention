@@ -2,6 +2,10 @@ import sqlite3
 import json
 import uuid
 
+# ###################
+# ###### DB section
+# ###################
+
 # connect to the database
 conn = sqlite3.connect('data.db')
 
@@ -46,6 +50,10 @@ def find(specs, db = 'data'):
     
     return foundData
 
+
+# ###################
+# ###### Records Section
+# ###################
 
 class Record:
     def __init__(self):
@@ -116,6 +124,12 @@ class OtherRecord(Record):
         self.indexes = []
 
 
+
+# ###################
+# ###### Accounts Section
+# ###################
+
+
 class Account:
     def __init__(self, url, identifier, name):
         self.name = name
@@ -149,6 +163,10 @@ def email(email):
     return Account('none', email, 'email').toJsonObject()
 
 
+
+# ###################
+# ###### Search Section
+# ###################
 
 def searchUsername(username):
 
